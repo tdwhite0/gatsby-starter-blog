@@ -34,7 +34,7 @@ class BlogPostTemplate extends React.Component {
           }}
         />
         <Bio />
-        <CustomDiv />
+        <CustomDiv title={post.frontmatter.title} />
 
         <ul
           style={{
