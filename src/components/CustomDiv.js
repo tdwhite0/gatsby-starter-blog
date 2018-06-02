@@ -5,6 +5,7 @@ class CustomDiv extends React.Component {
     return (
      <div>This is a div</div>
      )
+     }
 }
 
 export default CustomDiv;
