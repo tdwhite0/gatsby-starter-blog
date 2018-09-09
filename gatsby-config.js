@@ -19,6 +19,22 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+              plugins: [
+                {
+                  resolve: 'gatsby-remark-toc',
+                  options: {
+                    header: 'Table of Contents', // the custom header text
+                    include: [
+                      'content/**/*.md', // an include glob to match against
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 590,
