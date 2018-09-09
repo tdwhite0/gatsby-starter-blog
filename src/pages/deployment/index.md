@@ -17,7 +17,7 @@ See [Overview](/overview)
 Once the inital setup is performed, the intention is to provide a release pipeline in VSTS to automate deployment of changes. Administrators can view code changes in the release to verify their content, then trigger an automated Release to the tenant.
 
 # Azure App Settings
-The following settings are required for running the Function App and the WebJobs.
+The following settings are required for running the Function App and the WebJobs. Once these settings are configured in the Azure Resources they don't need to be modifed upon every release.
 | Name | Example | Remark |
 | ------ | ------ | ----- |
 | SPTenantUrl | https://rightpoint.sharepoint.com
@@ -28,7 +28,7 @@ The following settings are required for running the Function App and the WebJobs
 | SPAdminPassword
 | SPTenantUrl
 | SPAdminUrl
-| SPTemplateSiteUrl
+| SPTemplateSiteUrl | https://rightpoint.sharepoint.com/sites/pagetemplates | See [Templates Site](/templatessite)
 | ClientId
 | ClientSecret
 | YammerAppId 
