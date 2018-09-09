@@ -16,7 +16,7 @@ See [Overview](/overview)
 # Release Pipeline deployment
 Once the inital setup is performed, the intention is to provide a release pipeline in VSTS to automate deployment of changes. Administrators can view code changes in the release to verify their content, then trigger an automated Release to the tenant.
 
-![release](release.png)
+![release](release2.png)
 
 # Azure App Settings
 The following settings are required for running the Function App and the WebJobs. Once these settings are configured in the Azure Resources they don't need to be modifed upon every release.
