@@ -1,13 +1,12 @@
 ---
-title: Testing
-date: "2015-05-06T23:46:37.121Z"
+title: Deploying the Spark Provisioning Engine Flows
+date: "2018-09-09T23:46:37.121Z"
 ---
 
-Wow! I love blogging so much already.
+High level steps
 
-Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich."?
-([Wikipedia Link](http://en.wikipedia.org/wiki/Salted_duck_egg))
+Run the ARM template to create Azure Resources
 
-Yeah, I didn't either.
+Set up Release pipeline in VSTS
+
+Add Microsoft Flow custom connector to tenant
