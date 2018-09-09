@@ -33,7 +33,6 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
-        <Bio />
         <CustomDiv title={post.frontmatter.title} />
 
         <ul
