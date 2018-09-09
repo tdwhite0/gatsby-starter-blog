@@ -9,5 +9,7 @@ The solution requires a special site collection on the tenant. This site collect
 
 **Important: This site collection must be assigned Read access to all users**
 
+![templates](templatesite.png)
+
 ## Creating a template
 Templates are provisioned using PnP Provisioning. The Apply a Spark Template action attempts to provision the selected template against the given site collection. If the template is invalid or errors during the provisioning process, the Flow action will error and provide the error message.  
