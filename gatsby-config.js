@@ -1,39 +1,28 @@
 module.exports = {
   siteMetadata: {
-    title: 'Spark Provisioning Flows',
-    author: 'Tom White',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
+    title: "Bricolage",
+    author: "Kyle Mathews",
+    homeCity: "San Francisco",
   },
-  pathPrefix: '/gatsby-starter-blog',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
-        name: 'pages',
+        name: "pages",
+      },
+    },
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-              plugins: [
-                {
-                  resolve: 'gatsby-remark-toc',
-                  options: {
-                    header: 'Table of Contents', // the custom header text
-                    include: [
-                      'content/**/*.md', // an include glob to match against
-                    ],
-                  },
-                },
-              ],
-            },
-          },
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -46,28 +35,39 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          'gatsby-remark-prismjs',
-          'gatsby-remark-copy-linked-files',
-          'gatsby-remark-smartypants',
+          "gatsby-remark-prismjs",
+          "gatsby-remark-copy-linked-files",
+          "gatsby-remark-smartypants",
         ],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-774017-3`,
       },
     },
-    `gatsby-plugin-feed`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        pathToConfigModule: 'src/utils/typography',
+        name: "Bricolage",
+        short_name: "Bricolage",
+        icons: [
+          {
+            src: "/logo.png",
+            sizes: "1024x1024",
+            type: "image/png",
+          },
+        ],
+        start_url: "/",
+        background_color: "white",
+        theme_color: "white",
+        display: "minimal-ui",
       },
     },
+    `gatsby-plugin-offline`,
+    // `gatsby-plugin-preact`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
