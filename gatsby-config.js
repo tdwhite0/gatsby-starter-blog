@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Test Blog',
+    title: 'Spark Provisioning Flows',
     author: 'Tom White',
     description: 'A starter blog demonstrating what Gatsby can do.',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
