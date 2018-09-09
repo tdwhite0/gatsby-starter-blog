@@ -30,7 +30,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Spark Provisioning Flows
+            Spark Provisioning Custom Flow Connector
           </Link>
         </h1>
       )
@@ -51,7 +51,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Spark Provisioning Flows
+            Spark Provisioning Custom Flow Connector
           </Link>
         </h3>
       )

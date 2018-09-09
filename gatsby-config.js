@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Bricolage",
-    author: "Kyle Mathews",
-    homeCity: "San Francisco",
+    title: "Spark Provisioning Custom Flow Connector",
+    author: "Rightpoint",
+    homeCity: "Detroit",
   },
   plugins: [
     {
