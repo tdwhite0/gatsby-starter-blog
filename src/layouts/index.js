@@ -30,7 +30,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Test Blog
+            Spark Provisioning Flows
           </Link>
         </h1>
       )
@@ -51,7 +51,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Test Blog
+            Spark Provisioning Flows
           </Link>
         </h3>
       )
